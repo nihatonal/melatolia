@@ -10,7 +10,7 @@ function NavLinks(props) {
     return (
         <div className={`navbar ${props.className}`} style={props.style}>
             {props.children}
-            <NavLink
+            <div className={props.sidebar_nav_item_wrapper}><NavLink
                 className={({ isActive }) =>
                     isActive ? "nav-item active-nav-item" : "nav-item"
                 }
@@ -18,8 +18,8 @@ function NavLinks(props) {
                 onClick={props.closeDrawer}
             >
                 Home
-            </NavLink>
-            <NavLink
+            </NavLink> </div>
+            <div className={props.sidebar_nav_item_wrapper}><NavLink
                 className={({ isActive }) =>
                     isActive ? "nav-item active-nav-item" : "nav-item"
                 }
@@ -27,8 +27,8 @@ function NavLinks(props) {
                 onClick={props.closeDrawer}
             >
                 About Us
-            </NavLink>
-            <NavLink
+            </NavLink> </div>
+            <div className={props.sidebar_nav_item_wrapper}><NavLink
                 className={({ isActive }) =>
                     isActive ? "nav-item active-nav-item" : "nav-item"
                 }
@@ -36,8 +36,8 @@ function NavLinks(props) {
                 onClick={props.closeDrawer}
             >
                 Features
-            </NavLink>
-            <NavLink
+            </NavLink> </div>
+            <div className={props.sidebar_nav_item_wrapper}><NavLink
                 className={({ isActive }) =>
                     isActive ? "nav-item active-nav-item" : "nav-item"
                 }
@@ -45,8 +45,8 @@ function NavLinks(props) {
                 onClick={props.closeDrawer}
             >
                 Products
-            </NavLink>
-            <NavLink
+            </NavLink> </div>
+            <div className={props.sidebar_nav_item_wrapper}><NavLink
                 className={({ isActive }) =>
                     isActive ? "nav-item active-nav-item" : "nav-item"
                 }
@@ -54,7 +54,7 @@ function NavLinks(props) {
                 onClick={props.closeDrawer}
             >
                 Contact
-            </NavLink>
+            </NavLink> </div>
 
 
         </div>
