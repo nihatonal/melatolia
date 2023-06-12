@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #024d94;
+  --white-color: #fff;
+  --red-color: #bb133a;
+  --yellow-color: #f8d171;
+  --dark-red-color: #930000;
+  --dark-blue-color: #02407b;
+  --border-color: #ddd;
+  --input-border-color: #ebebeb;
+  --input-color: #555;
+  --primary-font-family: "Nunito Sans", sans-serif;
+  --secondary-font-family: "Open Sans", sans-serif;
+  --color_danger: rgb(230, 34, 93);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: auto;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+textarea {
+  resize: none;
+}
