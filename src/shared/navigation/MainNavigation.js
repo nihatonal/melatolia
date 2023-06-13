@@ -19,24 +19,24 @@ function MainNavigation(props) {
         setDrawerIsOpen(false);
     };
 
-    useEffect((_) => {
-        const handleScroll = (_) => {
-            if (window.pageYOffset > 90) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
-        window.addEventListener("scroll", handleScroll);
-        return (_) => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    // useEffect((_) => {
+    //     const handleScroll = (_) => {
+    //         if (window.pageYOffset > 90) {
+    //             setScrolled(true);
+    //         } else {
+    //             setScrolled(false);
+    //         }
+    //     };
+    //     window.addEventListener("scroll", handleScroll);
+    //     return (_) => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, []);
 
 
 
     return (
-        <div className={scrolled ? 'header header_fixed' : 'header'}>
+        <div className={'header'}>
             <SideNavBar
                 openDrawerHandler={openDrawerHandler}
                 closeDrawer={closeDrawerHandler}
@@ -46,7 +46,7 @@ function MainNavigation(props) {
                 }}
                 className={'hide-sidebar'}
             />
-            <div className={scrolled ? "main_header main_header_fixed" : 'main_header'}>
+            <div className={'main_header'}>
                 {/* <ReactSVG src={Logo} /> */}
                 <img src={logo} alt='logo' />
 
