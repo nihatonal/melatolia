@@ -5,7 +5,7 @@ import line from '../../assets/images/line.png';
 import { HiOutlineLifebuoy } from "react-icons/hi2";
 import { LuFileHeart } from "react-icons/lu";
 import { LuGlassWater } from "react-icons/lu";
-import { GrSync } from "react-icons/gr";
+import { WiStrongWind } from "react-icons/wi";
 import './Features.css';
 function Features(props) {
 
@@ -32,11 +32,11 @@ function Features(props) {
             id: "feature_4",
             title: "Durability",
             text: 'Turkish towels produced as double stitches are much durable than other towels. These products can be used for many years without wearing out.',
-            icon: 'GrSync',
+            icon: 'WiStrongWind',
         },
     ]
     return (
-        <div className='feature_container p-30' id='features'>
+        <section className='feature_container p-15' id='features'>
             <h3 className="section_title">
                 Melatolia - Soft Linen
             </h3>
@@ -51,7 +51,7 @@ function Features(props) {
                             {item.icon === 'HiOutlineLifebuoy' ? <HiOutlineLifebuoy /> :
                                 item.icon === 'LuFileHeart' ? <LuFileHeart /> :
                                     item.icon === 'LuGlassWater' ? <LuGlassWater /> :
-                                        item.icon === 'GrSync' ? <GrSync /> : null
+                                        item.icon === 'WiStrongWind' ? <WiStrongWind /> : null
                             }
 
                         </div>
@@ -59,7 +59,7 @@ function Features(props) {
                 )}
 
             </div>
-        </div>
+        </section>
     );
 }
 

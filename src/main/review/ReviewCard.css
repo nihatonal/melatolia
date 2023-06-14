@@ -1,0 +1,24 @@
+.review_item {
+  /* width: 127px; */
+  background-color: var(--secondary-color);
+  padding: 25px 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.review_item_text,
+.review_item_author {
+  font-family: var(--secondary-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 15px 20px;
+  line-height: 33px;
+  color: var(--white-color);
+}
+.review_item_author {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+

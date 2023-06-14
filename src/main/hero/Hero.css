@@ -41,6 +41,7 @@
 .hero_list_item svg {
   fill: var(--yellow-color);
   margin-right: 6px;
+  font-size: 18px;
 }
 .hero_image {
   width: 100%;

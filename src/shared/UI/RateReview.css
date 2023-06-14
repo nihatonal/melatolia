@@ -1,0 +1,12 @@
+.review_stars_wrapper {
+  display: flex;
+}
+.empty_star {
+  position: relative;
+  line-height: 0;
+}
+.review_star_empty {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

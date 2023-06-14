@@ -1,0 +1,16 @@
+.products_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.products_item img {
+  width: 100%;
+}
+.products_item_title {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.5;
+  margin: 50px 0 25px;
+}

@@ -1,0 +1,23 @@
+.review_container {
+  background-color: var(--red-color);
+  position: relative;
+  overflow: hidden;
+}
+.review_container::after {
+  content: "COMMENT";
+  font-family: var(--primary-font-family);
+  font-size: 280px;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0.1;
+  position: absolute;
+  line-height: 200px;
+  left: -70px;
+  bottom: 0;
+}
+.review_items_wrapper {
+  display: flex;
+  column-gap: 20px;
+  /* padding:  */
+}
+

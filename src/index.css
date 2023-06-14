@@ -4,6 +4,7 @@
   --white-color: #fff;
   --red-color: #bb133a;
   --yellow-color: #eeb524;
+  --yellow-bg-color: #f8d171;
   --dark-red-color: #930000;
   --dark-blue-color: #02407b;
   --border-color: #ddd;
@@ -24,6 +25,7 @@ html,
 body {
   height: auto;
   width: 100%;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -34,8 +36,11 @@ button {
 textarea {
   resize: none;
 }
+ul {
+  list-style: none;
+}
 .p-15 {
-  padding: 0 15px;
+  padding: 120px 15px;
 }
 .p-30 {
   padding: 0 30px;
@@ -45,7 +50,7 @@ textarea {
   font-weight: 700;
   font-size: 28px;
   line-height: 38px;
-  text-align: left;
+  text-align: center;
   color: var(--secondary-color);
 }
 @media only screen and (min-width: 767px) {
