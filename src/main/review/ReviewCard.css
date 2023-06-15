@@ -1,16 +1,17 @@
 .review_item {
   /* width: 127px; */
   background-color: var(--secondary-color);
-  padding: 25px 5px 0;
+  padding: 50px 5px 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 10px;
+  margin: 0 15px;
 }
 .review_item_text,
 .review_item_author {
   font-family: var(--secondary-font-family);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   padding: 0 15px 20px;
   line-height: 33px;
@@ -18,7 +19,7 @@
 }
 .review_item_author {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 

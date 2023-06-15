@@ -3,16 +3,15 @@ import React from 'react';
 
 import RateReview from '../../shared/UI/RateReview';
 import './ReviewCard.css'
-function ReviewCard(props) {
+function ReviewCard({review}) {
     return (
 
         <div className="review_item">
             <p className="review_item_text">
-                "These hand towel are great. I ordered grey. Didn’t fade or have lint. Nice thickness."
-
+                {review.comment}
             </p>
-            <RateReview star={3.5}/>
-            <p className='review_item_author'>Sophronia Dalya</p>
+            <RateReview star={review.rate}/>
+            <p className='review_item_author'>{review.author}</p>
         </div>
     );
 }

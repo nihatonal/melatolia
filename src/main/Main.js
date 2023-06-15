@@ -6,6 +6,7 @@ import Features from './features/Features';
 import Why from './why/Why';
 import Products from './products/Products';
 import Review from './review/Review';
+import Contact from './contact/Contact';
 import './Main.css'
 function Main(props) {
     return (
@@ -17,6 +18,7 @@ function Main(props) {
             <Why />
             <Products />
             <Review />
+            <Contact />
 
 
         </div>
