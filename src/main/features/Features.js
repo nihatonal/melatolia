@@ -45,6 +45,7 @@ function Features(props) {
             <div className="features_items_wrapper">
                 {data.map((item) =>
                     <div className="features_item" key={item.id}>
+
                         <h3 className="features_item-title">{item.title}:</h3>
                         <p className="features_item_desc">{item.text}</p>
                         <div className="features_item_icon_wrapper">
@@ -55,6 +56,7 @@ function Features(props) {
                             }
 
                         </div>
+
                     </div>
                 )}
 

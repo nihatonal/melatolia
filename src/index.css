@@ -33,14 +33,12 @@ a {
 button {
   border: none;
 }
-textarea {
-  resize: none;
-}
+
 ul {
   list-style: none;
 }
 .p-15 {
-  padding: 120px 15px;
+  padding: 150px 15px;
 }
 .p-30 {
   padding: 120px 30px;
@@ -52,6 +50,17 @@ ul {
   line-height: 38px;
   text-align: center;
   color: var(--secondary-color);
+}
+.section_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.section_wrapper {
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 767px) {
   .section_title {

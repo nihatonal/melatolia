@@ -1,10 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import Input from '../../shared/components/formElements/Input'
 import { useHttpClient } from "../../shared/hooks/http-hook";
 import {
     VALIDATOR_REQUIRE,
     VALIDATOR_EMAIL,
-    VALIDATOR_MINLENGTH,
 } from "../../shared/util/validators";
 import { useForm } from "../../shared/hooks/form-hook";
 import LoadingSpinner from '../../shared/UI/LoadingSpinner'
@@ -45,8 +44,8 @@ function ContactForm(props) {
     };
 
     return (
-        <div className="">
-            <form onSubmit={authSubmitHandler} className="sign_up_inputs_wrapper">
+        <div className="contact_form">
+            <form onSubmit={authSubmitHandler} className="contact_form_wrapper">
 
                 <Input
                     id="fname_lname"
@@ -55,6 +54,7 @@ function ContactForm(props) {
                     placeholder="Firstname Lastname"
                     validators={[VALIDATOR_REQUIRE()]}
                     onInput={inputHandler}
+                    required={'required'}
 
                 />
                 <Input
@@ -62,8 +62,9 @@ function ContactForm(props) {
                     element="input"
                     type="email"
                     placeholder="Email Address"
-                    validators={[VALIDATOR_REQUIRE(),VALIDATOR_EMAIL()]}
+                    validators={[VALIDATOR_REQUIRE(), VALIDATOR_EMAIL()]}
                     onInput={inputHandler}
+                    required={'required'}
                 />
                 <Input
                     id="phone"
@@ -73,27 +74,30 @@ function ContactForm(props) {
                     validators={[VALIDATOR_REQUIRE()]}
                     onInput={inputHandler}
                 />
-                 <Input
+                <Input
                     id="subject"
                     element="input"
                     type="text"
                     placeholder="Subject"
                     validators={[VALIDATOR_REQUIRE()]}
                     onInput={inputHandler}
+                    required={'required'}
                 />
                 <Input
                     id="message"
                     element="textarea"
                     type="text"
+                    rows='10'
                     placeholder="Message"
                     validators={[VALIDATOR_REQUIRE()]}
                     onInput={inputHandler}
+                    required={'required'}
                 />
 
 
                 <button type="submit"
                     // disabled={!formState.isValid} 
-                    className="signup_button">
+                    className="contact_submit_button">
                     {isLoading ? <LoadingSpinner /> : 'Submit'}
 
                 </button>

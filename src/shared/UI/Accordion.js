@@ -14,7 +14,7 @@ const Accordion = (props) => {
                 ref={contentEl}
                 className="accordion_drop_item"
                 style={
-                    props.active
+                    props.active 
                         ? { height: contentEl.current.scrollHeight }
                         : { height: "0px" }
                 }

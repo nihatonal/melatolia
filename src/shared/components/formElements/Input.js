@@ -62,7 +62,7 @@ const Input = props => {
         value={inputState.value}
         pattern={props.pattern}
         placeholder={props.placeholder}
-        required
+        required={props.required}
       />
     ) : (
       <textarea

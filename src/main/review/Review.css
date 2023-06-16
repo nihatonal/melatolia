@@ -21,4 +21,8 @@
   padding: 0 20px;
   /* padding:  */
 }
-
+@media only screen and (min-width: 767px) {
+  .review_container {
+    padding: 150px 50px;
+  }
+}

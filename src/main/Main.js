@@ -7,6 +7,7 @@ import Why from './why/Why';
 import Products from './products/Products';
 import Review from './review/Review';
 import Contact from './contact/Contact';
+import Partners from './partners/Partners';
 import './Main.css'
 function Main(props) {
     return (
@@ -19,6 +20,7 @@ function Main(props) {
             <Products />
             <Review />
             <Contact />
+            <Partners />
 
 
         </div>
