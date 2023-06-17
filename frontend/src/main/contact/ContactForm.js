@@ -40,6 +40,25 @@ function ContactForm(props) {
 
     const authSubmitHandler = async event => {
         event.preventDefault();
+        try {
+            const responseData = await sendRequest(
+                'http://localhost:5000/api/users/sendmail',
+                "POST",
+                JSON.stringify({
+                    fname_lname: formState.inputs.fname_lname.value,
+                    email: formState.inputs.email.value,
+                    phone: formState.inputs.phone.value,
+                    subject: formState.inputs.subject.value,
+                    message: formState.inputs.message.value
+                }),
+                {
+                    "Content-Type": "application/json",
+                }
+
+            );
+            console.log(responseData)
+        } catch (err) {
+        }
 
     };
 

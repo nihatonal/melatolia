@@ -15,20 +15,19 @@ function Contact(props) {
         }
         setSelectedItem(id)
     }
-    const [windowSize, setWindowSize] = useState(window.innerWidth);
+    // const [windowSize, setWindowSize] = useState(window.innerWidth);
 
-    useEffect(() => {
-        const handleWindowResize = () => {
-            setWindowSize(window.innerWidth);
-        };
+    // useEffect(() => {
+    //     const handleWindowResize = () => {
+    //         setWindowSize(window.innerWidth);
+    //     };
 
-        window.addEventListener('resize', handleWindowResize);
+    //     window.addEventListener('resize', handleWindowResize);
 
-        return () => {
-            window.removeEventListener('resize', handleWindowResize);
-        };
-    }, []);
-    console.log(windowSize)
+    //     return () => {
+    //         window.removeEventListener('resize', handleWindowResize);
+    //     };
+    // }, []);
 
     return (
         <section className="contact_container p-30" id='contact'>
