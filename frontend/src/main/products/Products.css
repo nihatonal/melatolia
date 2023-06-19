@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.products_item:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .products_item img {
   width: 100%;

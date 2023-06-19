@@ -4,7 +4,8 @@ import NavLinks from './NavLinks';
 
 import logo from '../../assets/images/logo.png'
 import Hamburger from './Hamburger';
-import SideNavBar from './SideNavBar';
+import SideDrawer from './SideDrawer';
+import Backdrop from '../UI/Backdrop';
 
 import './MainNavigation.css';
 function MainNavigation(props) {
@@ -18,17 +19,17 @@ function MainNavigation(props) {
     };
     return (
         <div className={'header'}>
-            <SideNavBar
-                openDrawerHandler={openDrawerHandler}
-                closeDrawer={closeDrawerHandler}
-                drawerIsOpen={drawerIsOpen}
-                onClick={() => {
-                    openDrawerHandler(false)
-                }}
-                className={'hide-sidebar'}
-            />
+            {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
+            {<SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
+                <NavLinks
+                    sidebar_nav_item_wrapper='sidedrawer-navlink_wrapper'
+                    className={'sidedrawer-navlinks'}
+                    onClick={props.onClick}
+                    closeDrawer={closeDrawerHandler}
+                />
+            </SideDrawer>}
+
             <div className={'main_header'}>
-                {/* <ReactSVG src={Logo} /> */}
                 <img src={logo} alt='logo' />
 
                 <NavLinks />
@@ -37,9 +38,6 @@ function MainNavigation(props) {
                     onClick={openDrawerHandler}
                 />
             </div>
-
-            {/* <Modal showModal={openModal} closeModal={() => { openSignUpModal(false) }} ><SignUp /></Modal> */}
-
         </div>
     );
 }

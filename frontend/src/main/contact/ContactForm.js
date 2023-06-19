@@ -56,7 +56,7 @@ function ContactForm(props) {
                 }
 
             );
-            console.log(responseData)
+           // console.log(responseData)
         } catch (err) {
         }
 
