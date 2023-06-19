@@ -36,6 +36,7 @@ function Products(props) {
                             >
                                 {product.images.map((el) =>
                                     <a
+                                        key={product.color + el}
                                         id={el}
                                         data-fancybox={product.id}
                                         href={`http://localhost:3000${require(`../../assets/images/${product.color}/${el}.jpg`)}`}
